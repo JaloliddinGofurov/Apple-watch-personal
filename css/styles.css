@@ -228,3 +228,19 @@ transition: opacity 0.3s ease;
 .features-link:hover::before {
   width: 60px;
 }
+
+/* PROMO */
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
