@@ -34,6 +34,11 @@ img {
   height: auto;
 }
 
+*:focus {
+  outline: 3px dashed #EA625C;
+  outline-offset: 2px;
+}
+
 /* CONTAINER */
 .container {
   width: 100%;
@@ -44,8 +49,120 @@ img {
   margin-left: auto;
 }
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  border: 0;
+  text-align: center;
+  padding: 12px 38px;
+  min-width: 260px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #EA625C;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #C9514C;
+}
+.button:active {
+  opacity: 0.6;
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.site-header-container {
+  display: flex;
+  align-items: center;
+}
+.site-header-logo {
+  margin-right: auto;
+transition: opacity 0.3s ease;
+}
+.site-header-logo:hover {
+  opacity: 0.8;
+}
+.site-header-logo:active {
+  opacity: 0.6;
+}
+.site-header-img {
+  display: block;
+  width: 35px;
+  height: 42px;
+  object-fit: contain;
+}
+/* SITENAV */
+.sitenav {
+  margin-right: 40px;
+}
+.sitenav-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.sitenav-item:not(:last-child) {
+  margin-right: 30px;
+}
+.sitenav-link {
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+.sitenav-link:hover {
+  border-bottom: 3px solid #333;
+}
+/* SEARCH-FORM */
+.search-form-input {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 0;
+  border-bottom: 1px solid #333;
+}
+
+/* LEAD-CTA */
+.hero {
+  padding-top: 140px;
+  padding-bottom: 185px;
+  border-bottom: 3px solid #ddd;
+  background-image: url("../img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 550px) bottom;
+}
+.lead-cta {
+  width: 100%;
+  width: 490px;
+}
+.lead-cta-heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000;
+}
+.lead-cta-text {
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #777;
 }
