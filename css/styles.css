@@ -71,6 +71,34 @@ img {
   opacity: 0.6;
 }
 
+/* CTA */
+.lead-cta {
+  width: 100%;
+  width: 490px;
+}
+.lead-cta-heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000;
+}
+.lead-cta-white .lead-cta-heading {
+  color: #fff;
+}
+.lead-cta-text {
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #777;
+}
+.lead-cta-white .lead-cta-text {
+  color: #fff;
+  border-color: #fff;
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
@@ -147,25 +175,7 @@ transition: opacity 0.3s ease;
   background-repeat: no-repeat;
   background-position: left calc(50% + 550px) bottom;
 }
-.lead-cta {
-  width: 100%;
-  width: 490px;
-}
-.lead-cta-heading {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 1.2;
-  color: #000;
-}
-.lead-cta-text {
-  padding-left: 37px;
-  border-left: 3px solid #888;
-  margin-top: 0;
-  margin-bottom: 30px;
-  color: #777;
-}
+
 
 /* FEATURES */
 .features {
@@ -243,4 +253,33 @@ transition: opacity 0.3s ease;
   width: 400px;
   height: 600px;
   object-fit: cover;
+}
+
+/* RUNNERS */
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url("../img/runners\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.runners-lead-cta {
+  margin-left: auto;
+}
+
+
+/* RETINA */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+.hero {
+  background-image: url("../img/intro-bg@2x.jpg");
+ }
 }
